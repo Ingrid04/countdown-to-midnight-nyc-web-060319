@@ -1,29 +1,24 @@
 #write your code here
-number = 10
-countdown = 12
-def countdown  
-  loop do
+
+def countdown(number)
+  while number > 0
+   sleep 1
     puts "#{number} SECOND(S)!"
     number -= 1
-    break if number <= 0
   end
-  while countdown < 12
-   countdown -= 1
-    puts "HAPPY NEW YEAR!"
-  end
+  return "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep
-  loop do
+countdown(10)
+
+def countdown_with_sleep(number)
+  while number > 0
+   sleep 1
     puts "#{number} SECOND(S)!"
     number -= 1
-    break if number <= 0
   end
-  while countdown < 12
-   countdown -= 1
-    puts "HAPPY NEW YEAR!"
-    sleep 1
-  end
+  return "HAPPY NEW YEAR!"
 end
 
+countdown(10)
   
